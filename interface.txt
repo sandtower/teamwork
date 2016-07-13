@@ -8,3 +8,21 @@
 	3). 回测结果
 	输入: 3,600030
 	输出: 图片
+
+2.采集:
+  1). 基本面数据;
+  2). 历史日线;
+  3). 实时/历史分笔数据.
+
+3.策略:
+		request: 
+			{'user': 'xxx',
+			 'stock_info': [{'stock': 'xxx', 'shares': 100, 'cost': 10.0, 'last_deal': '2016-07-10'},...],
+			 'fund': 10000,
+			 'strategy': 'macd',
+ 			}
+
+		response: 
+			{'user': 'xxx',
+			 'result': 'ok',
+			 'deal_info': [{'stock': 'xxx', 'volume': 100, 'deal': 'sell/buy', 'price': 10.0, 'date': '2016-07-10'},...]			}
